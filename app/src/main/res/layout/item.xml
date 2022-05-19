@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    android:layout_marginTop="10dp">
+
+
+
+
+        <ImageView
+            android:id="@+id/item_img_view"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/img_chicken"
+            >
+
+        </ImageView>
+
+
+    <TextView
+
+        android:id="@+id/item_foodName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Spicy Salmon Poke Bowl"
+        android:textColor="#070707"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="118dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/item_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Ca$36.50"
+        android:textColor="#040404"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@+id/item_foodName"
+        app:layout_constraintStart_toStartOf="@+id/item_foodName"
+        app:layout_constraintTop_toBottomOf="@+id/item_foodName" />
+
+
+
+
+    <RatingBar
+        android:id="@+id/item_rating"
+        style="@style/Widget.AppCompat.RatingBar.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:progressTint="@color/yellow"
+        android:rating="3.5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/item_retingNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(45 Rating)"
+        android:textSize="10sp"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/item_rating"
+        app:layout_constraintStart_toStartOf="@+id/item_rating"
+        app:layout_constraintTop_toBottomOf="@+id/item_rating" />
+
+    <TextView
+        android:id="@+id/item_ingredient"
+        android:layout_marginTop="5dp"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:singleLine="false"
+        android:text="Spicy Salmon, Avocado, Tobiko, Mixed Green"
+        android:textSize="8sp"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+      app:layout_constraintEnd_toEndOf="@+id/item_price"
+        app:layout_constraintStart_toStartOf="@+id/item_price"
+        app:layout_constraintTop_toBottomOf="@+id/item_price" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+<!--<androidx.constraintlayout.widget.ConstraintLayout-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="110dp">-->
+
+<!--<ImageView-->
+<!--    android:id="@+id/imageView1"-->
+<!--    android:layout_width="100dp"-->
+<!--    android:layout_height="100dp"-->
+<!--    android:layout_marginStart="10dp"-->
+<!--    android:layout_marginTop="5dp"-->
+<!--    app:layout_constraintStart_toStartOf="parent"-->
+<!--    app:layout_constraintTop_toTopOf="parent"-->
+<!--    tools:srcCompat="@tools:sample/avatars">-->
+
+
+<!--</ImageView>-->
+
+<!--<TextView-->
+<!--    android:id="@+id/textView1"-->
+<!--    android:layout_width="wrap_content"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:layout_marginTop="10dp"-->
+<!--    android:text="Mixed Kebab Plate"-->
+<!--    android:textColor="#070707"-->
+<!--    android:textStyle="bold"-->
+<!--    app:layout_constraintStart_toEndOf="@+id/imageView1"-->
+<!--    app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--<TextView-->
+<!--    android:id="@+id/textView15"-->
+<!--    android:layout_width="wrap_content"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:text="Ca$29.99"-->
+<!--    android:layout_marginTop="5dp"-->
+<!--    android:textColor="#040404"-->
+<!--    android:textSize="10sp"-->
+<!--    app:layout_constraintEnd_toEndOf="@+id/textView1"-->
+<!--    app:layout_constraintStart_toStartOf="@+id/textView1"-->
+<!--    app:layout_constraintTop_toBottomOf="@+id/textView1" />-->
+
+<!--<TextView-->
+<!--    android:id="@+id/textView16"-->
+<!--    android:layout_width="80dp"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:ellipsize="end"-->
+<!--    android:maxLines="2"-->
+<!--    android:singleLine="false"-->
+<!--    android:text="Chargrill BBQ beef and Chicken kebab Served "-->
+<!--    android:textSize="8sp"-->
+<!--    android:layout_marginTop="5dp"-->
+<!--    app:layout_constraintEnd_toEndOf="@+id/textView15"-->
+<!--    app:layout_constraintStart_toStartOf="@+id/textView15"-->
+<!--    app:layout_constraintTop_toBottomOf="@+id/textView15" />-->
+
+
+<!--<RatingBar-->
+
+
+<!--    android:id="@+id/ratingBar7"-->
+<!--    style="@style/Widget.AppCompat.RatingBar.Small"-->
+<!--    android:layout_width="wrap_content"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:layout_marginEnd="30dp"-->
+<!--    android:progressTint="@color/yellow"-->
+<!--    android:rating="3.5"-->
+<!--    app:layout_constraintBottom_toBottomOf="parent"-->
+<!--    app:layout_constraintEnd_toEndOf="parent"-->
+<!--    app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--<TextView-->
+<!--    android:layout_width="wrap_content"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:layout_marginTop="13dp"-->
+<!--    android:background="@color/white"-->
+<!--    android:text="(84 Rating)"-->
+<!--    android:textSize="10sp"-->
+<!--    app:layout_constraintEnd_toEndOf="@+id/ratingBar7"-->
+<!--    app:layout_constraintStart_toStartOf="@+id/ratingBar7"-->
+<!--    app:layout_constraintTop_toBottomOf="@+id/ratingBar7" />-->
+
+
+<!--</androidx.constraintlayout.widget.ConstraintLayout>-->
